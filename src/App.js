@@ -39,3 +39,6 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(App);
+
+// we can shorten mapStateToProps() down to an anonymous arrow function and pass it directly into connect():
+// export default connect(state => ({ items: state.items }))(App);
